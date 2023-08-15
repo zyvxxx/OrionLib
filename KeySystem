@@ -44,14 +44,3 @@ Tab:AddTextbox({
 		_G.KeyInput = Value
 	end	  
 })
-
-Tab:AddButton({
-	Name = "Check Key",
-	Callback = function()
-      	if _G.KeyInput == _G.Key then
-        CorrectKeyNotification()
-        else
-            IncorrectKeyNotification()
-        end
-  	end    
-})
